@@ -21,7 +21,7 @@ The resulting product, Search.java represents everything that a search/filtering
 
 To use it, say you have a Person class:
 
-
+```java
 public class Person {
 
     private String firstName;
@@ -59,6 +59,7 @@ public class Person {
     }
 
 }
+```
 
 Now say you have loaded a list of Person objects into a JList or a ListView. GridView etc.
 

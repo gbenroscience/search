@@ -80,7 +80,15 @@ public abstract class Search<T> {
         this.searchMode = searchMode;
     }
 
-    public void setData(ArrayList<T> data) {
+    public void resetData(ArrayList<T> data) {
+        synchronized (this) {
+            this.backupData.clear();
+            this.searchMode = NORMAL;
+            this.data = data;
+        }
+    }
+
+    private void setData(ArrayList<T> data) {
         this.data = data;
         update(data);
     }

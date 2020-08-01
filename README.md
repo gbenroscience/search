@@ -98,10 +98,14 @@ Now say you have loaded a list of Person objects into a JList, a JTable, a GridV
         };
 ```
 
-
-In the implemented ```java update(ArrayList)``` method , set the updated data(the search results) to your UI's view model. (e.g BaseAdapter in Android, TableModel or ListModel
+<span>
+In the implemented 
+```java
+update(ArrayList)
+``` 
+method , set the updated data(the search results) to your UI's view model. (e.g BaseAdapter in Android, TableModel or ListModel
 in Java swing)
-
+</span>
 In the implemented match method, simply specify the search criteria: this will usually be a relationship between the search text and the properties of the items in the UI's view model.
 
 At the instance of loading , at the point in your code where you load data into your ui model, call

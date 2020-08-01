@@ -109,7 +109,7 @@ public abstract class Search<T> {
      *
      * @param searchText The text to search
      */
-    public final void search(String searchText) {
+    public final void find(String searchText) {
 
         if (searchText.isEmpty()) {
             setSearchMode(ENDING);

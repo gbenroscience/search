@@ -61,9 +61,7 @@ public class Person {
 }
 ```
 
-Now say you have loaded a list of Person objects into a JList or a ListView. GridView etc.
-
-To make your UI element searchable, create a Search object.
+Now say you have loaded a list of Person objects into a JList, a JTable, a GridView, a ListView or a RecyclerView or other; to make your UI element searchable, create a Search object.
 
 ```java
         Search search = new Search<Person>() {

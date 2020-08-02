@@ -68,6 +68,7 @@ public abstract class Search<T> {
                         data.clear();
                         data.addAll(backupData);
                         backupData.clear();
+                         update(data);
                     }
                     searchMode = NORMAL;
                     break;

@@ -66,12 +66,12 @@ Now say you have loaded a list of Person objects into a JList, a JTable, a GridV
 ```java
         Search search = new Search<Person>() {
             @Override
-            public void update(ArrayList<Person> data) {
+            public void update(final ArrayList<Person> data) {
                 SwingUtilities.invokeLater(new Runnable() {
                     @Override
                     public void run() {
                         PersonTableModel model = getModel();
-                        model.setData(search.getData());
+                        model.setData(data);
                     }
                 });
 
